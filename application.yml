@@ -1,0 +1,21 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9090/eureka/
+  instance:
+    hostname: localhost
+microservice:
+  price-service:
+    endpoints:
+      endpoint:
+        uri: http://price-service/asset/v1.0/prices
+  position-service:
+    endpoints:
+      endpoint:
+        uri: http://position-service/positions/api/v1.0/positions
+  eligibility-service:
+    endpoints:
+      endpoint:
+        uri: http://eligibility-service/eligibility/api/v1.0/eligibility
