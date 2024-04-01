@@ -14,7 +14,7 @@ microservice:
   position-service:
     endpoints:
       endpoint:
-        uri: http://position-service/positions/api/v1.0/positions
+        uri: http://position-service/positions/
   eligibility-service:
     endpoints:
       endpoint:
