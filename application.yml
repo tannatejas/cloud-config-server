@@ -10,7 +10,7 @@ microservice:
   price-service:
     endpoints:
       endpoint:
-        uri: http://localhost:8989/asset/prices
+        uri: http://price-service/asset/prices
   position-service:
     endpoints:
       endpoint:
